@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+       <title>安森工作室</title>
+        
+       
+    <link rel="stylesheet" type="text/css" href="js/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="js/dataTables.bootstrap.css">
+
+    <script type="text/javascript" language="javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/dataTables.bootstrap.js"></script>
+
+        <script type="text/javascript">
+                $(document).ready(function() {
+                    $('#example').DataTable( {
+                        "ajax": 'list.php',
+                        dataSrc: 'data',        //data = 数据data 名字可改
+                        columns: [              // 列名
+                            { data: 'id' },
+                             { data: 'name' },
+                            { data: 'age' },
+                            { data: 'address' },
+                            { data: 'vipcard' },
+                            { data: 'proj' },
+                            { data: 'imp' },
+                            { data: 'time1' }
+
+                            ]
+
+                    });
+
+                });
+
+   
+
+
+
+
+        </script>
+
+
+<style type="text/css">
+body{
+    font-size: 18px;
+}
+h1{
+    text-align: center;
+}
+.dataTable{  
+  width: 100%;
+    
+    margin:0 auto;
+
+}
+.ct{
+    width: 850px;
+}
+body{
+    background: #fff;
+}
+#myvip{
+    width: 850px;
+}
+
+table th{background:red;}
+table tr:nth-child(odd){background:#F4F4F4;}
+table td:nth-child(even){color:#C00;}
+/*table tr:nth-child(5){background:#73B1E0;color:#FFF;}*/
+table tr:hover{background:#73B1E0;color:#FFF;}
+
+
+
+</style>
+
+
+</head>
+<body><div class="ct">
+   <h1>vip信息</h1> 
+</div>
+<div id="myvip">
+<table id="example" class="table" cellspacing="0" >
+    <thead>
+        <tr> <th>id</th>
+            <th>name</th>
+            <th>age</th>
+            <th>address</th>
+            <th>vipcard</th>
+            <th>proj</th>
+            <th>imp</th>
+            <th>日期</th>
+        </tr>
+    </thead>
+
+</table>
+
+</div>
+
+</body>
+</html>

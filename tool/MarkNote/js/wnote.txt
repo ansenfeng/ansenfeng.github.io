@@ -1,0 +1,26 @@
+123456
+点击弹出单元格的值；
+var table = $('#example').DataTable();
+$('#example tbody').on( 'click', 'td', function () {
+    alert( table.cell( this ).data() );
+} );
+
+var table = $('#example').DataTable();
+alert( '有'+table.data().length+' 条数据在表格中' );
+
+var table = $('#example').DataTable();
+table.$(':contains("市场")').addClass('red');
+
+
+var table = $('#example').DataTable();
+ 
+// #column3_search is a <input type="text"> element
+$('#column3_search').on( 'keyup', function () {
+    table
+        .columns( 3 )
+        .search( this.value )
+        .draw();
+} );
+
+var table = $('#example').DataTable();
+  table.columns( 1).search( "金融" ).draw();

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>uid</title>
+		<script src="bootstrap/jquery.min.js"></script>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap1.css" />
+        <script type="text/javascript" src="bootstrap/js/bootstarp1.js"></script>
+
+			<style>
+
+			*{
+				font-size: 25px;
+
+			}
+			table.td{
+				padding: 20px;
+			}
+
+	
+.gcs-checkbox {
+
+  display: none;
+
+}
+
+.gcs-checkbox+label {
+
+  background-color: white;
+
+  border-radius: 0px;
+
+  border: 1px solid #d3d3d3;
+
+  width: 20px;
+
+  height: 20px;
+
+  display: inline-block;
+
+  text-align: center;
+
+  vertical-align: bottom;
+
+  line-height: 20px;
+
+}
+
+.gcs-checkbox+label:hover {
+
+  cursor: pointer;
+
+  border: 1px solid #2783FB;
+
+}
+
+.gcs-checkbox:checked+label {
+
+  background-color: #eee;
+
+  background: #2783FB;
+
+}
+
+.gcs-checkbox:checked+label:after {
+
+  content: "\2714";
+
+  color: white;
+
+}
+
+/*单选按钮*/
+
+.gcs-radio {
+
+ display: none;
+
+}
+
+.gcs-radio+label {
+
+  width: 20px;
+
+  height: 20px;
+
+  line-height: 20px;
+
+  display: inline-block;
+
+  text-align: center;
+
+  vertical-align: bottom;
+
+  border: 1px solid gray;
+
+  border-radius: 50%;
+
+}
+
+.gcs-radio+label:hover {
+
+  border: 1px solid #2783FB;
+
+  cursor: pointer;
+
+}
+
+.gcs-radio:checked+label {
+
+  background: #2783FB;
+
+  border: 1px solid #2783FB;
+
+}
+
+.gcs-radio:checked+label:after {
+
+  content: "\2022";
+
+  font-size: 35px;
+
+  color: white;
+
+}
+#fora {background-color: green;
+		width: 800px;}
+
+body{
+  background-color: #;
+}
+#rig{
+  float: right;
+}
+			</style>
+
+		 <script type="text/javascript">
+$('#item1').click(function(){
+　　console.log($(this).prop('checked'))
+})
+   </script>	
+
+</head>
+<body>
+
+
+<form name="form2" role="form" action="write.php" method="post" >
+<table width=500px align="center" border="1" bordercolorlight="#000000" bordercolordark="#FFFFFF" bgcolor="" cellpadding="4" align="left">
+<tr> 
+<td colspan="2"> <div align="center"><b>vip会员信息卡</b><span id="rig"><a href="vipinfo.html">查询记录</a></span></div> </td>
+</tr>
+<tr> 
+<td>姓名： <input type="text" name="name" size="8" autofocus="autofocus" > </td>
+<td>年龄: <input type="text" name="age" size="10" maxlength="20"> </td>
+</tr>
+
+<td>地址： <input type="text" name="address" size="8"> </td>
+<td>vipcard: <input type="text" name="vipcard" size="10" maxlength="20"> </td>
+</tr>
+
+<tr> 
+<td colspan="2">
+   全身<input type="checkbox" id="全身" name="proj" value="全身"  class="gcs-checkbox">
+
+        <label for="全身"></label> 
+
+   局部<input type="checkbox" id="局部" name="proj" value="局部"  class="gcs-checkbox">
+
+         <label for="局部"></label>
+
+   拔罐<input type="checkbox" id="拔罐" name="proj" value="拔罐" class="gcs-checkbox">
+
+   <label for="拔罐"></label> 
+
+  其他<input type="checkbox" id="其他" name="proj" value="其他" class="gcs-checkbox">
+
+          <label for="其他"></label></td></tr>
+<tr> 
+<td colspan="2"> <div align="center">病 例<br> <textarea name="imp" cols="36" rows="5"></textarea>
+</div>
+</td>
+</tr>
+<tr> 
+<td> <div align="right"> <input type="submit" name="Submit" value="提 交"> </div> </td>
+<td> <input type="reset" name="Submit2" value="重 写"> </td>
+</tr>
+</table>
+</form>
+
+
+
+
+
+
+
+
+</body>
+</html>

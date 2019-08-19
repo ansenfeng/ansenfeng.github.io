@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+       <title>日晨表</title>
+        
+ 
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+        
+        var date_obj = new Date();
+        var day = date_obj.getDate();
+        var hour = date_obj.getHours();
+           
+        // if (hour >= 12) {
+        //   xiawu = "下午"
+        // }
+        // if (hour<=12) {
+        //   shangwu = "上午"
+        // }
+        //     alert(xiawu);
+        //    alert(shangwu);
+        if (hour >= 7 && hour < 8) {
+           $(".zao").css("background-color","#73B1E0");
+        } else if (hour >= 8 && hour < 12) {
+           $(".sw").css("background-color","#73B1E0");
+        } else if(hour >= 12 && hour < 14) {
+           $(".midd").css("background-color","#73B1E0");
+        } else if(hour >= 14 && hour < 18) {
+           $(".xiawu").css("background-color","#73B1E0");
+        } else if(hour >= 18 && hour < 22) {
+          $(".wan").css("background-color","#73B1E0");
+        } else if(hour >= 22 && hour < 23) {
+          alert("休息时间到");
+        } 
+
+
+        });
+        </script>
+
+<style type="text/css">
+body{
+    font-size: 22px;
+}
+h1{
+    text-align: center;
+}
+.dataTable{  
+  width: 660px;
+    
+    margin:0 auto;
+
+}
+body{
+    background: #fff;
+}
+.mid{
+vertical-align: middle;
+    text-align: center;
+}
+td.gr,td.bl{
+vertical-align: middle;
+    text-align: center;
+}
+table {
+    width: 660px;
+}
+table th{background:#;text-align:center;vertical-align: middle;}
+/*table tr:nth-child(odd){background:#F4F4F4;}
+table td:nth-child(even){color:#C00;}
+*//*table tr:nth-child(5){background:#73B1E0;color:#FFF;}*/
+table tr:hover{background:#73B1E0;color:#FFF; }
+table tr {
+    height: 50px;
+}
+#richeng{
+    width: 660px;
+}
+.gr{
+    color: green
+}
+.re{
+    color: #c00;
+}
+.bl{
+    color: blue;
+}
+.gray{
+    color: gray;
+}
+</style>
+
+
+</head>
+<body>
+<div id="myvip">
+<table  class="table" id="richeng"  align="center" cellspacing="0" >
+
+    <thead>
+        <tr> <th>时间</th>
+            <th>项目</th>
+  <th>戒律</th>
+        </tr>
+    </thead>
+
+    <tbody>
+     <tr class="zao"> <th rowspan="1">晨起预备</th><td class="gr">准备30min</td><td class="re">1:不和低层次辩论</td></tr> 
+
+     <tr class="sw"><td class="mid" rowspan="2">上午</td><td class="gr">金融帝国</td><td class="re">2:不拘小节</td></tr>  
+     <tr class="sw"><td class="gr">推拿</td><td class="re">3:下棋不得超过1/日</td></tr> 
+  
+
+     <tr class="midd"><td class="mid">中午</td><td class="gr">午睡1.5h</td><td></td></tr>
+
+     <tr class="xiawu" ><td class="mid " rowspan="2">下午</td><td class="gr">pinao</td><td class="gray">note:早上会吵到别人</td></tr> 
+     <tr class="xiawu"><td></td><td></td></tr>  
+
+     <tr class="wan"><td class="mid" rowspan="3">晚间</td><td class="gr">数据分析30min</td><td></td></tr>  
+     <tr class="wan"><td class="gr">金融课</td><td></td></tr>  
+     <tr class="wan"><td class="bl">for my house </td><td></td></tr>  
+
+    </tbody>
+
+</table>
+
+</div>
+
+</body>
+</html>
