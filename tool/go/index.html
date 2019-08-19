@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head> 
+    <title>EidoGo</title><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/> 
+
+    <!-- International support -->
+    <!-- <script type="text/javascript" src="player/i18n/XXX.js"></script> -->
+    
+    <script type="text/javascript" src="player/js/all.compressed.js"></script>
+
+    <!-- Uncomment the following to work with the original source. -->
+    <!-- <script type="text/javascript" src="player/js/lang.js"></script>
+    <script type="text/javascript" src="player/js/eidogo.js"></script>
+    <script type="text/javascript" src="player/js/util.js"></script>
+    <script type="text/javascript" src="player/i18n/en.js"></script>
+    <script type="text/javascript" src="player/js/gametree.js"></script>
+    <script type="text/javascript" src="player/js/sgf.js"></script>
+    <script type="text/javascript" src="player/js/board.js"></script>
+    <script type="text/javascript" src="player/js/rules.js"></script>
+    <script type="text/javascript" src="player/js/player.js"></script>
+    <script type="text/javascript" src="player/js/init.js"></script> -->
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+	
+
+    <div id="player-container"></div>
+
+    <script type="text/javascript">
+    var player = new eidogo.Player({
+        container:       "player-container", // HTML element id indicating where to put the player
+        theme:           "standard", // "standard" or "compact"
+        sgfUrl:          "sgf/test2.sgf", // relative URL (within same domain) to SGF file to load 
+        loadPath:        [0, 0], // The location within the game tree to start at
+        mode:            "play", // "play" or "view"
+         showComments:    true,
+        showPlayerInfo:  true,
+        showGameInfo:    true,
+        showTools:       true,
+        showOptions:     true,
+        markCurrent:     true,
+        markVariations:  true,
+        markNext:        false,
+        enableShortcuts: false,
+        problemMode:     false
+    });
+    </script>
+<a href="http://eidogo.com/">eidogog官网</a>
+</body>
+</html>
