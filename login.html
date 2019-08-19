@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>安得鱼工作室</title>
+
+  <style type="text/css">
+  body{
+    background-color: #333;
+  }
+  #cen{
+    height: 600px;
+  background: #FFF url(images/bg.jpg) repeat-x 0;
+    padding-top: 50px
+  }
+
+.login-form-wrap {
+  background: #5170ad;
+  background: -moz-radial-gradient(center, ellipse cover, #5170ad 0%, #355493 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #5170ad), color-stop(100%, #355493));
+  background: -webkit-radial-gradient(center, ellipse cover, #5170ad 0%, #355493 100%);
+  background: -o-radial-gradient(center, ellipse cover, #5170ad 0%, #355493 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #5170ad 0%, #355493 100%);
+  background: radial-gradient(ellipse at center, #5170ad 0%, #355493 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5170ad', endColorstr='#355493',GradientType=1 );
+  border: 1px solid #2d416d;
+  box-shadow: 0 1px #5670a4 inset, 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  position: relative;
+  width: 360px;
+  height: 380px;
+  margin: 10px auto 20px auto;
+  padding: 50px 30px 0 30px;
+  text-align: center;
+}
+.login-form-wrap:before {
+  background: url(http://);
+  display: block;
+  content: '';
+  width: 58px;
+  height: 19px;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+.login-form-wrap > h1 {
+  margin: 0 0 50px 0;
+  padding: 0;
+  font-size: 26px;
+  color: #fff;
+}
+.login-form-wrap > h5 {
+  margin-top: 40px;
+}
+.login-form-wrap > h5 > a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.login-form input[type="text"], .login-form input[type="password"] {
+  width: 90%;
+  border: 1px solid #314d89;
+  outline: none;
+  padding: 12px 20px;
+  color: #afafaf;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
+}
+.login-form input[type="email"] {
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  padding-bottom: 13px;
+  box-shadow: 0 -1px 0 #e0e0e0 inset, 0 1px 2px rgba(0, 0, 0, 0.23) inset;
+}
+.login-form input[type="password"] {
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.23) inset, 0 1px 2px rgba(255, 255, 255, 0.1);
+}
+.login-form input[type="submit"] {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  background: #e0e0e0;
+  background: -moz-linear-gradient(top, #e0e0e0 0%, #cecece 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e0e0e0), color-stop(100%, #cecece));
+  background: -webkit-linear-gradient(top, #e0e0e0 0%, #cecece 100%);
+  background: -o-linear-gradient(top, #e0e0e0 0%, #cecece 100%);
+  background: -ms-linear-gradient(top, #e0e0e0 0%, #cecece 100%);
+  background: linear-gradient(to bottom, #e0e0e0 0%, #cecece 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e0e0', endColorstr='#cecece',GradientType=0 );
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 17px;
+  color: #636363;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+  font-weight: 700;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.17), 0 1px 0 rgba(255, 255, 255, 0.36) inset;
+}
+.login-form input[type="submit"]:hover {
+  background: #DDD;
+}
+.login-form input[type="submit"]:active {
+  padding-top: 9px;
+  padding-bottom: 7px;
+  background: #C9C9C9;
+}
+            #footer {
+                height: 40px;
+                line-height: 40px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                background: #333;
+                color: #fff;
+                font-family: Arial;
+                font-size: 12px;
+                letter-spacing: 1px;
+            }
+
+            .content {
+                height: 1800px;
+                width: 100%;
+                text-align: center;
+            }
+
+
+#header{
+  padding-left: 80px;
+}
+
+.chec{
+  font-size: 12px;
+}
+
+  </style>
+
+
+</head>
+<body>
+<div id="header"> <img src="images/andeyu.png" width="250px" height="70px"> </div>
+<div id="cen">
+<section class="login-form-wrap">
+        <h1>安得鱼工作室</h1>
+        <form class="login-form" action="login.php" method="POST">
+            <label>
+                <input type="text" name="usernamec" required placeholder="Username">
+            </label>
+            <label>
+                <input type="password" name="passwordc" required placeholder="Password">
+            </label>
+
+            <label class="chec"> <input type="checkbox" name="remember" value="yes"/>7天内自动登录  </label> 
+           
+
+            <input type="submit" name="login" value="登陆">
+        </form>
+        <h5><a href="#">忘记密码</a></h5>
+    </section>
+</div>
+<div id="footer">Copyright 2019 蜀ICP备19018898号 andeyu.com. All Rights Reserved  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

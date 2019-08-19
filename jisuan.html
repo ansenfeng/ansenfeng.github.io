@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jisuan</title>
+	<style type="text/css">
+	#in2{
+			font-size: 30px;
+border-bottom: 1px solid #dbdbdb;  
+border-top:0px;  
+border-left:0px;  
+border-right:0px;  
+z-index: 999;
+		}
+		#in2:focus{
+    outline: none; 
+   border-bottom: 1px solid #dbdbdb;  
+border-top:0px;  
+border-left:0px;  
+border-right:0px;  
+}
+
+		</style>
+</head>
+<body>
+<div id="in3"></div>
+<input id="in2" type='text' autocomplete="off" name="name" onkeyup="huiche(event);" autofocus="autofocus"></input>
+
+<script type="text/javascript">
+	
+function inc1(){
+		var abb=document.getElementById("in2").value;
+		var bbb = eval (abb);
+		console.log(abb);
+		console.log(bbb);
+		var html = document.getElementById("in3").innerHTML;
+		document.getElementById("in3").innerHTML = html+"<span class='inc1' >"+abb+" = "+bbb+"</span>"+"<br/>";
+		document.getElementById('in2').value = bbb;
+}
+  function huiche(event) {
+        if (event.keyCode == 13) {
+        	inc1();
+        	console.log(123);
+            event.returnValue = false;
+        }
+    };
+
+
+
+</script>
+</body>
+</html>
