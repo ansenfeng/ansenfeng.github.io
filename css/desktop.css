@@ -1,0 +1,209 @@
+
+/* `Misc
+----------------------------------------------------------------------------------------------------*/
+
+.abs {
+	position: absolute;
+	top: auto;
+	left: auto;
+	right: auto;
+	bottom: auto;
+}
+.align_center {
+	text-align: center;
+}
+.align_right {
+	text-align: right;
+}
+.float_left {
+	float: left;
+}
+.float_right {
+	float: right;
+}
+.ui-resizable-se {
+	background: url(../images/gui/window_corner.gif) no-repeat right bottom;
+	font-size: 0;
+	overflow: hidden;
+	width: 15px;
+	height: 15px;
+	right: 0;
+	bottom: 0;
+}
+div.ui-resizable-handle {
+	display: none !important;
+	visibility: hidden !important;
+}
+/* `Icons
+----------------------------------------------------------------------------------------------------*/
+
+
+.icon:hover, .icon.ui-draggable-dragging {
+	background-position: 0 0;
+	background-repeat: repeat;
+	border: 1px solid #fff;
+	padding: 5px 0 5px;
+}
+.icon.ui-draggable-dragging {
+	z-index: 20;
+}
+/* `Windows
+----------------------------------------------------------------------------------------------------*/
+
+
+ table.data tbody tr:nth-child(even) td {
+ background: #def;
+}
+table.data tbody tr.active td {
+	background: #06c url(../images/gui/bar_top_link.png) repeat-x;
+	color: #fff;
+}
+th.shrink {
+	width: 1%;
+}
+/* `Bar >> Top + Bottom
+----------------------------------------------------------------------------------------------------*/
+
+#bar_top, {
+	font-weight: bold;
+	padding: 0 10px;
+	left: 0;
+	right: 0;
+}
+#bar_top {
+	background: #fff url(../images/gui/bar_top.png) repeat-x left bottom;
+	border-bottom: 1px solid #333;
+	color: #999;
+	line-height: 25px;
+	padding-right: 20px;
+	text-shadow: #fff 0 1px 1px;
+	height: 25px;
+	width: 100%;
+	top: 0;
+}
+/* `Bar >> Links
+----------------------------------------------------------------------------------------------------*/
+
+#bar_top li {
+	float: left;
+}
+#bar_top li a {
+	display: block;
+	padding: 0 10px;
+}
+#bar_top li a {
+	background-image: url(../images/gui/bar_top_link.png);
+	background-repeat: no-repeat;
+	background-position: -99999px -99999px;
+	color: #000;
+	overflow: hidden;
+	height: 25px;
+	min-height: 1px;
+	
+	
+}
+#bar_top a.active {
+	background-color: #06c;
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	color: #fff;
+	text-shadow: none;
+}
+#bar_top a.menu_trigger{
+	font-weight:bold;
+	font-size:13px;
+}
+
+#bar_top ul.menu {
+	background: #eee;
+	border: 1px solid #333;
+	border-top-width: 0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-background-clip: padding-box;
+	display: none;
+	font-weight: normal;
+	margin: 1px 0 0 -1px;
+	padding: 1px 1px 0;
+	position: absolute;
+	min-width: 200px;
+	z-index: 30;
+}
+#bar_top ul.menu li {
+	float: none;
+}
+#bar_top ul.menu a {
+	background: #fff;
+	border-bottom: 1px solid #eee;
+	min-width: 180px;
+}
+#bar_top ul.menu li:last-child a {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-background-clip: padding-box;
+}
+#bar_top ul.menu a:hover {
+	background: #06c url(../images/gui/bar_top_link.png) repeat-x;
+	color: #fff;
+	text-shadow: none;
+}
+
+/* `Wrapper + Wallpaper + Desktop
+----------------------------------------------------------------------------------------------------*/
+#bar_top a.menu_trigger1{
+	font-weight:bold;
+	font-size:13px;
+}
+#bar_top ul.menu1 {
+	background: #eee;
+	border: 1px solid #333;
+	border-top-width: 0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-background-clip: padding-box;
+	display: none;
+	font-weight: normal;
+	margin: 1px 0 0 -1px;
+	padding: 1px 1px 0;
+	position: absolute;
+	min-width: 280px;
+	z-index: 30;
+	right: 1px;
+}
+#bar_top ul.menu1 li {
+	float: none;
+}
+#bar_top ul.menu1 a {
+	background: #fff;
+	border-bottom: 1px solid #;
+	min-width: 280px;
+}
+#bar_top ul.menu1 li:last-child a {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-background-clip: padding-box;
+}
+#bar_top ul.menu1 a:hover {
+	background: #06c url(../images/gui/bar_top_link.png) repeat-x;
+	color: #fff;
+	text-shadow: none;
+}
+#clock1 span {  text-align:center }
+
+

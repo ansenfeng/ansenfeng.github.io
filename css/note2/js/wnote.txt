@@ -1,0 +1,27 @@
+  <li> <a class="menu_trigger" href="javascript:void(0);">学习</a>
+    <ul class="menu">
+      <li> <a href="https://wallstreetcn.com/live/global">华尔街快讯</a> </li>
+      <li> <a href="http://finance.sina.com.cn/7x24/">新浪时事新闻</a> </li>
+      <li> <a href="http://apps.swufe-online.com/ols/Login/Index">西财在线</a> </li>
+      <li> <a href="http://ke.qq.com">腾讯课堂</a> </li>
+      <li> <a href="https://docs.qq.com/desktop/">腾讯文档</a> </li>
+      <li> <a href="http://xueshu.baidu.com/">百度学术</a> </li>
+    </ul>
+  </li>
+  <li> <a class="menu_trigger" href="javascript:void(0);">生活</a>
+    <ul class="menu">
+      <li> <a href="https://58.com">58同城</a> </li>
+      <li> <a href="https://www.ke.com">贝壳找房</a> </li>
+      <li> <a href="http://i.baidu.com/my/cal">百度日历</a> </li>
+    </ul>
+  </li>
+<li> <a class="menu_trigger" href="javascript:void(0);">工具</a>
+    <ul class="menu">
+      <li> <a href="https://app.yinxiang.com/Login.action">印象笔记</a> </li>
+      <li> <a href="http://lbsyun.baidu.com/customv2/index.html">百度地图编辑器</a> </li>
+      <li> <a href="https://mail.163.com/">网易163</a> </li>
+      <li> <a href="https://fanyi.baidu.com/">百度翻译</a> </li>
+      <li> <a href="https://rkb.chengdu.gov.cn/expectScore/show">成都居住证模拟打分</a> </li>
+      <li> <a href="https://cp.aliyun.com/">万网首页</a> </li>
+      <li> <a href="https://cp.aliyun.com/">万网首页2</a> </li>
+    </ul></li>

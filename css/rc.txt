@@ -1,0 +1,18 @@
+  <table  class="table " id="richeng2"  align="center" cellspacing="0" >
+    <thead>
+        <tr> <th>时间</th> <th>项目</th> <th>戒律</th></tr>
+    </thead>
+
+    <tbody>
+     <tr class="zao"> <th rowspan="1">晨起预备</th><td class="gr">准备30min</td><td class="re">1:不和低层次辩论</td></tr> 
+     <tr class="sw"><td class="mid" rowspan="2">上午</td><td class="gr">金融帝国</td><td class="re">2:不拘小节</td></tr>  
+     <tr class="sw"><td class="gr">推拿</td><td class="re">3:下棋不得超过1/日</td></tr> 
+     <tr class="midd"><td class="mid">中午</td><td class="gr">午睡1.5h</td><td></td></tr>
+     <tr class="xiawu" ><td class="mid " rowspan="2">下午</td><td class="gr">pinao</td><td class="gray">note:早上会吵到别人</td></tr> 
+     <tr class="xiawu"><td></td><td></td></tr>  
+     <tr class="wan"><td class="mid" rowspan="3">晚间</td><td class="gr">数据分析30min</td><td></td></tr>  
+     <tr class="wan"><td class="gr">金融课</td><td></td></tr>  
+     <tr class="wan"><td class="bl">for my house </td><td> 
+     </td></tr>  
+      </tbody>
+  </table>
